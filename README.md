@@ -10,7 +10,7 @@ Please see the tutorial notebook or the boxnote for instructions on how to use t
 ```
 @article{antonello2023scaling,
   title={Scaling laws for language encoding models in fMRI}, 
-  author={Richard Antonello and Aditya Vaidya and Alexander G. Huth},
+  author={Richard J. Antonello and Aditya R. Vaidya and Alexander G. Huth},
   journal={Advances in Neural Information Processing Systems},
   volume={36},
   year={2023}
