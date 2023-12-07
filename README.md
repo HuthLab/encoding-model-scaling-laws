@@ -1,6 +1,8 @@
 # Encoding Model Scaling Laws
 Repository for the 2023 NeurIPS paper "Scaling laws for language encoding models in fMRI"
 
+![Encoding model performance for OPT-30B](https://github.com/HuthLab/encoding-model-scaling-laws/blob/main/corrs.png)
+
 This repository provides feature extraction code, as well as encoding model features and weights from the analyses in the paper “Scaling Laws for Language Encoding Models in fMRI”.
 
 The repository uses a [Box folder](https://utexas.box.com/v/EncodingModelScalingLaws) to host larger data files, including weights, response data, and features.
