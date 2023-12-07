@@ -1,5 +1,5 @@
 # Encoding Model Scaling Laws
-Repository for the 2023 NeurIPS paper "Scaling laws for language encoding models in fMRI"
+Repository for the 2023 NeurIPS paper "[Scaling laws for language encoding models in fMRI](https://arxiv.org/abs/2305.11863)".
 
 ![Encoding model performance for OPT-30B](https://github.com/HuthLab/encoding-model-scaling-laws/blob/main/corrs.png)
 
