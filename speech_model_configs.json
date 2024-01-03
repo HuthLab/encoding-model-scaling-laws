@@ -1,0 +1,57 @@
+{
+    "hubert-base": {
+        "huggingface_hub": "facebook/hubert-base-ls960",
+        "stride": 320,
+        "min_input_length": 400
+    },
+    "hubert-large": {
+        "huggingface_hub": "facebook/hubert-large-ll60k",
+        "stride": 320,
+        "min_input_length": 400
+    },
+    "hubert-xlarge": {
+        "huggingface_hub": "facebook/hubert-xlarge-ll60k",
+        "stride": 320,
+        "min_input_length": 400
+    },
+    "wavlm-base": {
+        "huggingface_hub": "microsoft/wavlm-base",
+        "stride": 320,
+        "min_input_length": 400
+    },
+    "wavlm-base-plus": {
+        "huggingface_hub": "microsoft/wavlm-base-plus",
+        "stride": 320,
+        "min_input_length": 400
+    },
+    "wavlm-large": {
+        "huggingface_hub": "microsoft/wavlm-large",
+        "stride": 320,
+        "min_input_length": 400
+    },
+    "whisper-tiny": {
+        "huggingface_hub": "openai/whisper-tiny",
+        "stride": 320,
+        "min_input_length": 400
+    },
+    "whisper-base": {
+        "huggingface_hub": "openai/whisper-base",
+        "stride": 320,
+        "min_input_length": 400
+    },
+    "whisper-small": {
+        "huggingface_hub": "openai/whisper-small",
+        "stride": 320,
+        "min_input_length": 400
+    },
+    "whisper-medium": {
+        "huggingface_hub": "openai/whisper-medium",
+        "stride": 320,
+        "min_input_length": 400
+    },
+    "whisper-large": {
+        "huggingface_hub": "openai/whisper-large",
+        "stride": 320,
+        "min_input_length": 400
+    }
+}
