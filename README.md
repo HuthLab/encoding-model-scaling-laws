@@ -24,7 +24,7 @@ Please see the tutorial notebook or the boxnote for instructions on how to use t
 Feature extraction from audio-based models is not as straightforward as for LMs because audio models are usually bidirectional, and because of this we created a separate feature extraction pipeline.
 To maintain the causality of the features, we extract features from these models with a sliding window over the stimulus.
 In this paper, the stride is 0.1 s and the size is 16.1 s.
-At every iteration of the sliding window, we select the output vector for the final "token" of the model’s output, and place it at the end of the window.
+At every iteration of the sliding window $[t-16.1, t]$, we select the output vector for the final "token" of the model’s output, and consider it _the_ feature vector for time $t$.
 This ensures that features at time $t$ are only computed given the first $t$ seconds of audio.
 
 Because feature extraction is more complex, it is broken out into a separate script: https://github.com/HuthLab/encoding-model-scaling-laws/blob/main/extract_speech_features.py .
