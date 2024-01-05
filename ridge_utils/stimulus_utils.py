@@ -1,4 +1,4 @@
-from textgrid import TextGrid
+from ridge_utils.textgrid import TextGrid
 import os
 import numpy as np
 from collections import defaultdict
