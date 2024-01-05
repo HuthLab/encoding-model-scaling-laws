@@ -340,7 +340,6 @@ if __name__ == "__main__":
     else:
         cci_features = None
         print('Saving features to local filesystem.')
-        print('NOTE: You can use ./upload_features_to_corral.sh to upload them later if you wish')
 
     model_name = args.model
     with open('speech_model_configs.json', 'r') as f:
@@ -498,7 +497,7 @@ if __name__ == "__main__":
             wav = torch.cat([torch.zeros(int(extract_features_kwargs['contextsz_sec']*TARGET_SAMPLE_RATE)), wav], axis=0)
             extract_features_kwargs['wav'] = wav.to(model.device)
 
-        extracted_features = extract_features_hf(**extract_features_kwargs)
+        extracted_features = extract_speech_features(**extract_features_kwargs)
         out_features, times, module_features = [extracted_features[k] for k in \
                                                 ['final_outputs', 'times', 'module_features']]
         del extracted_features # free up some memory after we've selected the outputs we want; maybe unnecessary
