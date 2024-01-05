@@ -88,3 +88,4 @@ downsampled_features = lanczosinterp2D(features, times, wordseqs[story].tr_times
 ```
 
 `downsampled_features` can then be used like features from OPT or LLaMa.
+(Note that features in the Box are already downsampled, so this step is not necessary.)
