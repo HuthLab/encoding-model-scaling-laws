@@ -351,8 +351,8 @@ def convert_to_feature_mats_llama(wordseqs, tokenizer, lookback1, lookback2, tex
             acc_lookback += 1
             if i == total_len - 1:
                 text_dict2[(story, i)] = True
-        featureseqs[story] = DataSequence(np.array(newdata), ds.split_inds, ds.data_times, ds.tr_times)
-        downsampled_featureseqs = {}
-        for story in featureseqs:
-            downsampled_featureseqs[story] = featureseqs[story].chunksums('lanczos', window=3)
-        return downsampled_featureseqs
+    featureseqs[story] = DataSequence(np.array(newdata), ds.split_inds, ds.data_times, ds.tr_times)
+    downsampled_featureseqs = {}
+    for story in featureseqs:
+        downsampled_featureseqs[story] = featureseqs[story].chunksums('lanczos', window=3)
+    return downsampled_featureseqs
